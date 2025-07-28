@@ -1,96 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="description" content="Survey Form">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Survey Form" />
+    <link rel="stylesheet" href="style.css" />
     <title>Survey Form</title>
-</head>
-<body>
+  </head>
+  <body>
     <form method="post" action="https://register-demo.freecodecamp.org">
-        <fieldset>
-            <label>Name:
-                <input type="text" name="name" id="name" placeholder="Enter your name" required>
-            </label>
-            <label>Email:
-                <input type="email" name="email" id="email" placeholder="Enter your email" required>
-            </label>
-            <label>Age:
-                <input type="number" name="age" id="age" placeholder="Enter your age" min="10" max="120" required>
-            </label>
-            <label> Which option best describes your current employment status?
-                <select name="employment" id="employment" required>
-                    <option value="" disabled selected>Select an option</option>
-                    <option value="employed">Employed</option>
-                    <option value="unemployed">Unemployed</option>
-                    <option value="student">Student</option>
-                    <option value="retired">Retired</option>
-                    <option value="other">Other</option>
-                </select>
-            </label>
-        </fieldset>
-        <fieldset>
-            <legend>Would you recommend this services to a friend?</legend>
-            <label for="recommend_yes" >
-            <input type="radio" name="recommend" id="recommend_yes" value="yes" required>
-            Yes</label>
-               <label for="recommend_no">
-               <input type="radio" name="recommend" id="recommend_no" value="no" required>
-               No</label>
-               <label for="maybe">
-               <input type="radio" name="recommend" id="maybe" value="maybe" required>
-               Maybe</label>
-        </fieldset>
-        <fieldset>
-            <legend>Languages and Frameworks to know</legend>
-            <label for="C">
-                <input type="checkbox" name="languages" id="C" value="C">
-                C
-            </label>
-            <label for="C++">
-                <input type="checkbox" name="languages" id="C++" value="C++">
-                C++
-            </label>
-            <label for="CSharp">
-                <input type="checkbox" name="languages" id="CSharp" value="CSharp">
-                C#
-            </label>
-             <label for="Java">
-                <input type="checkbox" name="languages" id="Java" value="Java">
-                Java
-            </label>
-            <label for="Python">
-                <input type="checkbox" name="languages" id="Python" value="Python">
-                Python
-            </label>
-            <label for="JavaScript">
-                <input type="checkbox" name="languages" id="JavaScript" value="JavaScript">
-                JavaScript
-            </label>
-           <label for="React">
-            <input type="checkbox" name="languages" id="React" value="React"/>
-                React
-           </label>
-            <label for="Angular">
-                <input type="checkbox" name="languages" id="Angular" value="Angular"/>
-                Angular
-            </label>
-            <label for="Django">
-                <input type="checkbox" name="languages" id="Django" value="Django"/>
-                Django
-            </label>
-            <label for="Spring">
-                <input type="checkbox" name="languages" id="Spring" value="Spring"/>
-                Spring
-            </label>
-        </fieldset>
-        <fieldset>
-            <legend>Any comments or suggestions?</legend>
-            <textarea name="comments" id="comments" rows="4" placeholder="Enter your comments here"></textarea>
-        </fieldset>
-            <input type="submit" value="Submit"/>
+      <fieldset>
+        <label
+          >Name:
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+            required
+          />
+        </label>
+        <label
+          >Email:
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </label>
+        <label
+          >Age:
+          <input
+            type="number"
+            name="age"
+            id="age"
+            placeholder="Enter your age"
+            min="10"
+            max="120"
+            required
+          />
+        </label>
+        <label>
+          Which option best describes your current employment status?
+          <select name="employment" id="employment" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="employed">Employed</option>
+            <option value="unemployed">Unemployed</option>
+            <option value="student">Student</option>
+            <option value="retired">Retired</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Would you recommend this services to a friend?</legend>
+        <label for="recommend_yes">
+          <input
+            type="radio"
+            name="recommend"
+            id="recommend_yes"
+            value="yes"
+            required
+          />
+          Yes</label
+        >
+        <label for="recommend_no">
+          <input
+            type="radio"
+            name="recommend"
+            id="recommend_no"
+            value="no"
+            required
+          />
+          No</label
+        >
+        <label for="maybe">
+          <input
+            type="radio"
+            name="recommend"
+            id="maybe"
+            value="maybe"
+            required
+          />
+          Maybe</label
+        >
+      </fieldset>
+      <fieldset>
+        <legend>Languages and Frameworks to know</legend>
+        <label for="C">
+          <input type="checkbox" name="languages" id="C" value="C" />
+          C
+        </label>
+        <label for="C++">
+          <input type="checkbox" name="languages" id="C++" value="C++" />
+          C++
+        </label>
+        <label for="CSharp">
+          <input type="checkbox" name="languages" id="CSharp" value="CSharp" />
+          C#
+        </label>
+        <label for="Java">
+          <input type="checkbox" name="languages" id="Java" value="Java" />
+          Java
+        </label>
+        <label for="Python">
+          <input type="checkbox" name="languages" id="Python" value="Python" />
+          Python
+        </label>
+        <label for="JavaScript">
+          <input
+            type="checkbox"
+            name="languages"
+            id="JavaScript"
+            value="JavaScript"
+          />
+          JavaScript
+        </label>
+        <label for="React">
+          <input type="checkbox" name="languages" id="React" value="React" />
+          React
+        </label>
+        <label for="Angular">
+          <input
+            type="checkbox"
+            name="languages"
+            id="Angular"
+            value="Angular"
+          />
+          Angular
+        </label>
+        <label for="Django">
+          <input type="checkbox" name="languages" id="Django" value="Django" />
+          Django
+        </label>
+        <label for="Spring">
+          <input type="checkbox" name="languages" id="Spring" value="Spring" />
+          Spring
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Any comments or suggestions?</legend>
+        <textarea
+          name="comments"
+          id="comments"
+          rows="4"
+          placeholder="Enter your comments here"
+        ></textarea>
+      </fieldset>
+      <input type="submit" value="Submit" />
     </form>
-</body>
+  </body>
 </html>

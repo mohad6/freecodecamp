@@ -1,46 +1,59 @@
 /* surveyform/style.css */
 body {
-    font-family: Arial, sans-serif;
-    background-color: white;
-    color: black;
-    width: 100%;
-   
-    margin: 0;
-    border: 5px solid  rgb(10, 182, 119);
-    font-size: 0.8rem;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+  width: 100%;
+  margin: 0;
+  height: 100vh;
+
+  font-size: 0.8rem;
 }
-form{
-    width: 100%;
-    max-width: 500px;
-    margin: 2rem auto;
-    display: block;
-     height: 160vh;
+form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: block;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 80vh;
+
+  border: 5px solid rgb(10, 182, 119);
 }
-fieldset{
-    padding: 1rem;
-    margin-bottom: 0.2rem;
-    border: none;
+fieldset {
+  padding: 1rem;
+  margin-bottom: 0.2rem;
+  border: none;
 }
-label{
-    text-align: left;
-    display: block;
-    margin-bottom: 0.5rem;
+label {
+  text-align: left;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 input[type="text"],
 input[type="email"],
 input[type="number"],
 select,
 textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin: 0.5rem 0;
-    border: 1px solid gray;
-    border-radius: 4px;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid gray;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
-input[type="submit"]{
-margin: 0 0 0 0;
-    padding: 0.5rem 0.5rem;
-    width: 100%;
-    background: rgb(10, 182, 119)
+input[type="submit"] {
+  cursor: pointer;
+
+  width: 90%;
+  margin: 1rem auto;
+  display: block;
+  background: rgb(10, 182, 119);
+}
+
+@media (max-width: 600px) {
+  form {
+    min-height: 60vh;
+    width: 95%;
+  }
 }
