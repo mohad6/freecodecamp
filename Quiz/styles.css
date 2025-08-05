@@ -44,6 +44,10 @@ h2 {
   border-bottom: 4px solid #dfdfe2;
 }
 
+h3::before {
+  content: "Question #";
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -53,3 +57,4 @@ h2 {
   clip-path: inset(50%);
   white-space: nowrap;
 }
+
